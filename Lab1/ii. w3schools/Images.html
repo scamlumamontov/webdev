@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <html lang="en"></html>
+
+        <style>
+            h1{
+                color:rgd(255, 0, 0)
+            }
+
+            h2{
+                color: #00ff00;
+                font-family: cursive;
+                font-size: 10px;
+            }
+
+            a :hover{
+                color:blue
+            }
+            a:active{
+                color:green
+            }
+            a :visited{
+                color:purple;
+            }
+
+            p{
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VZA7wG7pmz6VZo3istdrSksZwLg7gmvdPw&s');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+          <area shape="circle" coords="337,300,44" href="https://t3.ftcdn.net/jpg/03/15/40/34/360_F_315403482_MVo1gSOOfvwCwhLZ9hfVSB4MZuQilNrx.jpg" onclick="myFunction()">
+        </map>
+        
+        <script>
+        function myFunction() {
+          alert("You clicked the coffee cup!");
+        }
+        </script>
+
+        <h1>Background image</h1>
+        <p>Chill bro<br><br><br><br><br><br><br></p>
+        
+
+        <h1>This is picture resize your window!</h1>
+        <picture>
+            <source media="(min-width: 650px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrAIH5ePjPpc06-hopmyUZNsVbBPvZA0XGmQ&s">
+            <source media="(min-width: 465px)" srcset="https://grishko.com/wp-content/uploads/2024/11/Really-Just-A-Chill-Guy-Shirt-0-1.jpg">
+            <img src="https://youtooz.com/cdn/shop/files/26920r7f1p.png?v=1734720366" style="width:auto;">
+        </picture>
+    </body>
+
+</html>
