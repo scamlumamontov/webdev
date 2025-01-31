@@ -1,0 +1,120 @@
+.page{
+    background-color: black;
+}
+
+.header{
+    margin-top: 30px;
+    background-color: green;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pics{
+    /*Nothing here :)*/
+    color:aliceblue;
+}
+
+
+
+.inline{
+    display: inline;
+    text-decoration: none;
+}
+
+.small-form {
+    margin-left: 50px;
+    border: rgb(54, 54, 54) 1px solid;
+    width: 350px;
+    height: 30px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    background-color: gray;
+}
+
+.footer{
+    background-color: aquamarine;
+    margin-top: 15px;
+    margin-left:5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.footer__block{
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.footer__block__element {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.form{
+    background-color: gray;
+    margin-left: 50px;
+    border: rgb(54, 54, 54) 1px solid;
+    width: 350px;
+    height: 409px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+
+.sources{
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.source_pic{
+    height: 35px;
+    width: 125px;
+    padding-right: 15px;
+}
+
+.form__button{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    flex-direction: column;
+    margin: 0px 40px 0px 40px;
+    color:white;
+    background-color: #53bdeb;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    width: 270px;
+    display: block;
+}
+
+.form__input{
+    color:white;
+    background-color: black;
+    border: gray 1px solid;
+    flex: 1 0 auto;
+    margin: 0;
+    outline: none;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    height: 10px;
+    display: block;
+    padding-block: 1px;
+    padding-inline: 2px;
+    padding: 9px 0px 7px 8px;
+    width: 260px;
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
