@@ -1,0 +1,37 @@
+
+<div class="header">
+    <div>
+        <p style="color:white; font-size: 30px; font-family: cursive;"> My to do list </p>
+    </div>
+</div>
+
+<div class="to-do-list">
+
+    <div style="display: inline-block;padding-right: 90px;">
+        <input style="height: 40px;width: 480px;font-size:30px"
+        type="text"  [(ngModel)]="task" >
+
+    </div>
+
+    <div class="button" (click)="add()">
+        <img src="https://img.icons8.com/m_rounded/512/plus.png" style="width: 70px;height: 70px;">
+    </div>
+
+</div>
+
+<div class="tasks">
+
+  
+  <div class="task" *ngFor="let k of tasks; let id = index">
+    <button class="button" style="margin-left: 5px;" (click)="change(id)"> {{status[id] ? "Undone" : "Done!"}} </button>
+    <div>
+      <h3 class="task-name" [ngStyle]="{
+        'color': status[id] ? 'green' : 'black',
+        'text-decoration':status[id] ? 'line-through' : 'none'
+      }"> {{k}}</h3>
+    </div>
+    <button class="button delete-button" (click)="del(id)"> Delete! </button>
+  </div>
+
+</div>
+
