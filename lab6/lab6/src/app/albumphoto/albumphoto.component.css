@@ -1,0 +1,18 @@
+.content{
+    height: 500px;
+    width: 400px;
+    border: 1px black dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list{
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
