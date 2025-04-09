@@ -2,10 +2,17 @@ from django.http import HttpResponse
 from django.http import JsonResponse
 from .models import Product
 from .models import Category
+from django.views.decorators.csrf import csrf_exempt
+import json
 
+@csrf_exempt
 def getProducts(request):
-    products = Product.objects.all().values()
-    return JsonResponse(list(products), safe=False)
+    if request.method == 'GET':
+        products = Product.objects.all().values()
+        return JsonResponse(list(products), safe=False)
+    elif request.method == 'POST':
+        data = json.loads(request.body)
+        Product.objects.create(data)
 
 def someText(request):
     return HttpResponse("Hello, it works!")
@@ -35,3 +42,4 @@ def getCategoryProduct(request, id):
         return JsonResponse(list(products), safe=False)
     else:
         return JsonResponse({"error": "product not found"})
+
